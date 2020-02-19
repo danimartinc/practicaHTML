@@ -1,0 +1,48 @@
+h1 {
+    color: red;
+  }
+
+  p, li {
+    color: green;
+}
+
+li {
+    list-style-type: none;
+  }
+
+  .special{
+      font-weight: bold;
+
+  }
+
+  li.special {
+    color: orange;
+    
+  }
+
+  li em {
+    color: rebeccapurple;
+  }
+
+  h1 + p {  /*el hermano adyacente de h1, una p que le siga al h1 */
+    font-size: 200%;
+  }
+
+  a:link {
+    color: pink;
+  }
+  
+  a:visited {
+    color: green;
+  }
+
+  a:hover { /*la de coración del hupervinculo desaparece */
+    text-decoration: one;
+
+  }
+
+  body h1 + p .special {
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+  }
