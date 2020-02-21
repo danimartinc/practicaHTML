@@ -1,59 +1,96 @@
-body{
+html{
     font-family: 'Roboto', sans-serif;
     font-family: 'Bebas Neue', cursive;
-    overflow-y: scroll;
     height: 100%;
 }
+
+main{
+
+    height: 80%;
+    background-color: white;
+    text-align: center;
+
+     
+}
+
+body{
+    margin: 0px;
+    height: 100%;
+
+}
+
 header{
-display: flexbox;
+
+display: flex;
+height: 100%;
+background-color: black;
+align-items: center;
+justify-content: space-between;
+
 
 }
   header > em{
-    
-    color: seagreen;
+    display: flex;
+    color: white;
     align-items: baseline;
+    padding-left: 5%;
+    padding-right: 5%;
 
 
   } 
 
+  em >  button {
+   border-color: black;
+
+  }
+
   footer{
     height: 100%;
     background-color: black;
+    align-items: center;
+  }
+
+  footer > em{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a2a2a2;
 
   }
 
-  .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px;
-  }
+div.container{
+   display: grid;
+   justify-content: space-between;
+   align-items: center;
+   height: 70%;
+   width: 100%;
+   grid-gap: 20px;
+   grid-template-columns: 1fr 1fr;
+   overflow-x: scroll;
+   white-space: nowrap;
+   padding-bottom: 15%;
 
-  .sobre-mi {
-    width: 70px;
-    height: 24px;
-    font-family: BebasNeue;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1.67px;
-    text-align: center;
-    color: #a2a2a2;
-  }
+}
+.front-end, .back-end {
+   display: flexbox;
+   height: 100%;
+   width: 100%;
+   background-color: black;
+   text-align: center;
+   background-color: white;
+   
+}
 
-.Rectangle {
-    width: 320px;
-    height: 64px;
-    background-color: #000000;
-  }
+.front-end > h3, .back-end > h3{
+  
+    color: white;
 
-.Path {
-    width: 24px;
-    height: 24px;
-  }
+} 
+.first-section-button{
 
-.container{
+    color: #1c6698;
 
+
+   
 
 }
