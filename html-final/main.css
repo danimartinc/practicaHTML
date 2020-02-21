@@ -2,7 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    font-size: 300;
+    font-weight: 300;
     line-height: 1.43;
     margin: 0;
     background: #e7e7e7;
@@ -10,15 +10,15 @@ body {
     text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, header ul {
     font-family: 'Bebas Neue', cursive;
-    letter-spacing: 3px;
+    letter-spacing: 1.5px;
     font-weight: normal;
-
 }
 
 h1 {
     font-size: 36px;
+    letter-spacing: 3px;
 }
 
 h2 {
@@ -68,30 +68,124 @@ section {
 }
 
 /* header */
-header{
-
-    padding: 20px;
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 64px;
 }
 
-header h2{
-     
-    letter-spacing: 1,5px;
+header h2 {
+    font-size: 14px;
+    letter-spacing: 1.5px;
 }
 
-header #icon-open{
-
+header #icon-open {
 
 }
 
-header #icon-close{
-
-    
+header #icon-close {
+    display: none;
 }
 
-header nav{
+header nav {
+    display: none;
+}
+
+/* menu */
+header.nav-open #icon-open {
+    display: none;
+}
+
+header.nav-open nav,
+header.nav-open #icon-close {
+    display: block;
+}
+
+header.nav-open nav {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #e7e7e7;
+    height: 448px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.nav-open #icon-close {
+    z-index: 10;
+}
+
+header.nav-open ul {
+    letter-spacing: 2px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+header.nav-open ul li {
+    color: #1c6698;
+    margin: 40px;
+}
+
+/* summary */
+#summary {
+
+}
+
+#summary p {
+    font-size: 18px;
+}
+
+/* TODO fix button */
+#summary h1 {
+    margin-top: 24px;
+    margin-bottom: 34px;
+}
+
+/* skills */
+#skills {
+
+}
+
+#skills .list {
+    display: flex;
+    overflow: auto;
+}
+
+#skills .list .skill {
+    box-sizing: border-box;
+    padding: 30px 35px;
+    width: 208px;
+    height: 350px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
+    margin-right: 32px;
+}
+
+#skills .list .skill h3 {
+    border: solid 1px #ffffff;
+}
+
+#skills .list .skill h4 {
+    color: white;
+}
+
+#skills .list .skill ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 104px;
 
 
 }
