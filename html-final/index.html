@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="main.css">
     <title>Juan maravilloso</title>
 </head>
 
 <body>
-    <header>
+    <header class="wrapper">
         <h2>Juan maravilloso</h2>
-        <!-- Add icon -->
+        <i class="material-icons">
+            menu</i>
+        <i class="material-icons">
+            close</i>
         <nav>
             <ul>
                 <li>SOBRE MÍ</li>
@@ -19,7 +26,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="wrapper">
         <article>
             <section id="summary"></section>
             <p>HOLA!!</p>
@@ -33,44 +40,48 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolorem quis. Vitae totam dolorem
                 consequuntur ipsa laboriosam velit hic, molestias neque quia cupiditate quam laudantium deserunt aperiam
                 praesentium, rem adipisci.</p>
-            `<p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
+            <iframe src="https://www.youtube.com/embed/PGg_3XyEb2E" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
 
-            <section id="skills"> </section>
+            <section id="skills" class="wrapper"> </section>
             <h2>HABILIDADES</h2>
             <div class="list">
                 <div class="skill"></div>
-                <h3>Front-end developer</h3>
-                <h4>Lenguajes</h4>
-                <p>HTML, CSS, JavaScript</p>
-                <h4>DEV TOOLS</h4>
-                <ul>
-                    <li>Atom</li>
-                    <li>Bootstrap</li>
-                    <li>GitHub</li>
-                    <li>GitLab</li>
-                    <li>Terminal</li>
-                </ul>
+                    <h3>Front-end developer</h3>
+                    <h4>Lenguajes</h4>
+                    <p>HTML, CSS, JavaScript</p>
+                    <h4>DEV TOOLS</h4>
+                    <ul>
+                        <li>Atom</li>
+                        <li>Bootstrap</li>
+                        <li>GitHub</li>
+                        <li>GitLab</li>
+                        <li>Terminal</li>
+                    </ul>
             </div>
 
             <div class="skill"></div>
-            <h3>Back-end developer</h3>
-            <h4>Lenguajes</h4>
-            <p>Java, Node.js, Python, PHP</p>
-            <h4>DEV TOOLS</h4>
-            <ul>
-                <li>Angular</li>
-                <li>Doocker</li>
-                <li>GitHub</li>
-                <li>GitLab</li>
-            </ul>
-            </div>
+                <h3>Back-end developer</h3>
+                <h4>Lenguajes</h4>
+                <p>Java, Node.js, Python, PHP</p>
+                <h4>DEV TOOLS</h4>
+                <ul>
+                    <li>Angular</li>
+                    <li>Doocker</li>
+                    <li>GitHub</li>
+                    <li>GitLab</li>
+                </ul>
+                </div>
 
         </article>
     </main>
-    <footer>
-
-
+    <footer class="wrapper">
+           <p>
+            <small>&copy; 2020 Daniel Martín Cubero</small>
+    </p>
     </footer>
 
 </body>
