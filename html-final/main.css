@@ -1,64 +1,97 @@
-/*General*/
-body{
-    font-family: 'Roboto', sans-serif; /*Fuente principal de la pagina*/
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    font-size: 300;
+    line-height: 1.43;
     margin: 0;
     background: #e7e7e7;
     color: black;
     text-align: center;
 }
 
-h1, h2, h3,h4, h5, h6 { /*Establecemos la fuente para cada uno de los tamaños y el tamaño que queremos */
-
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    font-weight: normal;
+
 }
 
-h1{
-  font-size: 36px;  
+h1 {
+    font-size: 36px;
 }
-h2{
+
+h2 {
     font-size: 20px;
 }
-h3{
- font-size: 14px;
 
-}
-h4{
+h3 {
     font-size: 14px;
 }
 
-.button{
+h4 {
+    font-size: 14px;
+}
+
+.button {
     border-radius: 3px;
     border: solid 2px #1c6698;
     padding: 14px 36px;
     color: #1c6698;
-
 }
-
-.button.hover{
-
-    background: white;
+.button:hover {
+    background: #1c6698;
+    color: white;
 }
-
-a.button{
+a.button {
     text-decoration: none;
 }
-/*layout*/
-.wrapper{
-    margin-left: 24px;
-    padding-right: 24px; /*A todos los elemtos de esta clase se le crea el mismo margen dado*/
 
+
+/* layout */
+.wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 header,
 #about-me,
-footer, 
-.skills{
+footer,
+.skill {
     background: black;
-    color: white;
+    color: #a2a2a2;
 }
 
-section{
+section {
     padding-top: 60px;
     padding-bottom: 70px;
+}
+
+/* header */
+header{
+
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2{
+     
+    letter-spacing: 1,5px;
+}
+
+header #icon-open{
+
+
+}
+
+header #icon-close{
+
+    
+}
+
+header nav{
+
+
 }
